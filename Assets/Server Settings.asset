@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -584072495, guid: 83c412373f8acf34db47f4c01d283b39, type: 3}
+  m_Name: Server Settings
+  m_EditorClassIdentifier: 
+  defaultConfig:
+    channels:
+    - type: 3
+    - type: 0
+    packetSize: 1440
+    fragmentSize: 500
+    resendTimeout: 1200
+    disconnectTimeout: 2000
+    connectTimeout: 2000
+    minUpdateTimeout: 10
+    pingTimeout: 500
+    reducedPingTimeout: 100
+    allCostTimeout: 20
+    networkDropThreshold: 5
+    overflowDropThreshold: 5
+    maxConnectionAttempt: 10
+    ackDelay: 33
+    sendDelay: 10
+    maxCombinedReliableMessageSize: 100
+    maxCombinedReliableMessageCount: 10
+    maxSentMessageQueueSize: 512
+    acksType: 1
+    initialBandwidth: 0
+    bandwidthPeakFactor: 2
+    udpSocketReceiveBufferMaxSize: 0
+  maxConnections: 16
+  specialConnectionConfigs: []
+  receivedMessagePoolSize: 1024
+  sentMessagePoolSize: 1024
+  messagePoolSizeGrowthFactor: 0.75
